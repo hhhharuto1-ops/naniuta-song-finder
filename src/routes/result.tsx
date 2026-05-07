@@ -28,9 +28,20 @@ function Stars({ n, max = 5, color = "text-primary" }: { n: number; max?: number
   );
 }
 
+function normalizeScores(recs: { score: number }[]): number[] {
+  if (recs.length === 0) return [];
+  const max = recs[0].score;
+  const min = recs[recs.length - 1].score;
+  const range = max - min;
+  return recs.map((r) =>
+    range === 0 ? 100 : Math.round(60 + ((r.score - min) / range) * 40)
+  );
+}
+
 function Result() {
   const input = Route.useSearch();
   const recs = recommend(input);
+  const displayScores = normalizeScores(recs);
 
   return (
     <main className="min-h-screen bg-[image:var(--gradient-warm)] px-5 pb-24 pt-10">
@@ -52,7 +63,8 @@ function Result() {
 
         <div className="mt-6 space-y-4">
           {recs.map((r, i) => {
-            const { song, score, reasons } = r;
+            const { song, reasons } = r;
+            const displayScore = displayScores[i];
             return (
               <article
                 key={song.title + song.artist}
@@ -68,7 +80,7 @@ function Result() {
                   </div>
                   <div className="text-right">
                     <div className="text-[10px] opacity-80">おすすめ度</div>
-                    <div className="text-lg font-bold">{Math.min(100, Math.max(0, Math.round(score)))}</div>
+                    <div className="text-lg font-bold">{displayScore}</div>
                   </div>
                 </div>
 
