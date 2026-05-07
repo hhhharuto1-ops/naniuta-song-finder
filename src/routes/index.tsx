@@ -21,10 +21,10 @@ export const Route = createFileRoute("/")({
 
 function Home() {
   return (
-    <main className="min-h-screen bg-[var(--gradient-warm)] px-5 pb-16 pt-14">
+    <main className="min-h-screen bg-[image:var(--gradient-warm)] px-5 pb-16 pt-14">
       <div className="mx-auto max-w-md">
         <div className="text-center">
-          <div className="mx-auto mb-6 inline-flex h-20 w-20 items-center justify-center rounded-3xl bg-[var(--gradient-primary)] text-3xl shadow-[var(--shadow-soft)]">
+          <div className="mx-auto mb-6 inline-flex h-20 w-20 items-center justify-center rounded-3xl bg-[image:var(--gradient-primary)] text-3xl shadow-[var(--shadow-soft)]">
             🎤
           </div>
           <h1 className="text-4xl font-bold tracking-tight text-foreground">
@@ -50,7 +50,7 @@ function Home() {
 
         <Link
           to="/diagnose"
-          className="mt-8 block w-full rounded-2xl bg-[var(--gradient-primary)] px-6 py-5 text-center text-lg font-bold text-primary-foreground shadow-[var(--shadow-soft)] transition active:scale-[0.98]"
+          className="mt-8 block w-full rounded-2xl bg-[image:var(--gradient-primary)] px-6 py-5 text-center text-lg font-bold text-primary-foreground shadow-[var(--shadow-soft)] transition active:scale-[0.98]"
         >
           診断をはじめる →
         </Link>

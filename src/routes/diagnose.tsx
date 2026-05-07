@@ -68,7 +68,7 @@ function Diagnose() {
   };
 
   return (
-    <main className="min-h-screen bg-[var(--gradient-warm)] px-5 pb-24 pt-10">
+    <main className="min-h-screen bg-[image:var(--gradient-warm)] px-5 pb-24 pt-10">
       <div className="mx-auto max-w-md">
         <h1 className="text-2xl font-bold text-foreground">診断</h1>
         <p className="mt-1 text-sm text-muted-foreground">
@@ -106,7 +106,7 @@ function Diagnose() {
 
         <button
           onClick={submit}
-          className="mt-8 block w-full rounded-2xl bg-[var(--gradient-primary)] px-6 py-5 text-center text-lg font-bold text-primary-foreground shadow-[var(--shadow-soft)] transition active:scale-[0.98]"
+          className="mt-8 block w-full rounded-2xl bg-[image:var(--gradient-primary)] px-6 py-5 text-center text-lg font-bold text-primary-foreground shadow-[var(--shadow-soft)] transition active:scale-[0.98]"
         >
           結果を見る →
         </button>
