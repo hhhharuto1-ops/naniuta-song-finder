@@ -33,7 +33,7 @@ function Result() {
   const recs = recommend(input);
 
   return (
-    <main className="min-h-screen bg-[var(--gradient-warm)] px-5 pb-24 pt-10">
+    <main className="min-h-screen bg-[image:var(--gradient-warm)] px-5 pb-24 pt-10">
       <div className="mx-auto max-w-md">
         <div className="flex items-center justify-between">
           <h1 className="text-2xl font-bold text-foreground">あなたへのおすすめ</h1>
@@ -58,7 +58,7 @@ function Result() {
                 key={song.title + song.artist}
                 className="overflow-hidden rounded-3xl bg-card shadow-[var(--shadow-card)]"
               >
-                <div className="flex items-center gap-3 bg-[var(--gradient-primary)] px-4 py-3 text-primary-foreground">
+                <div className="flex items-center gap-3 bg-[image:var(--gradient-primary)] px-4 py-3 text-primary-foreground">
                   <div className="flex h-9 w-9 items-center justify-center rounded-full bg-white/25 text-sm font-bold">
                     {i + 1}
                   </div>
