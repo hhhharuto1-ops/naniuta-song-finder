@@ -91,7 +91,7 @@ function Result() {
 
                   <div className="mt-4 space-y-2 text-xs">
                     <Detail label="おすすめタイミング" value={song.timings.map(jpTiming).join("・")} />
-                    <Detail label="向いている場面" value={song.goodFor} />
+                    <Detail label="向いている場面" value={song.goodFor.join("・")} />
                     <Detail label="注意点" value={song.caution} tone="warn" />
                   </div>
 
