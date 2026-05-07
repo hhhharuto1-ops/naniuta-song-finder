@@ -79,7 +79,7 @@ function Diagnose() {
           <input
             value={hint}
             onChange={(e) => setHint(e.target.value)}
-            placeholder="例：エヴァ、ミセス、月9、TikTok、バラード"
+            placeholder="例：エヴァ、ミセス、月9、TikTok、バラード、サビしか知らない、会社で歌える曲"
             className="w-full rounded-2xl border border-border bg-card px-4 py-4 text-base outline-none focus:border-primary focus:ring-2 focus:ring-ring/30"
           />
         </Section>
