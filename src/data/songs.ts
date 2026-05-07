@@ -40,10 +40,10 @@ export const songs: Song[] = [
   {
     title: "ケセラセラ",
     artist: "Mrs. GREEN APPLE",
-    tags: ["ミセス", "J-POP", "最近"],
+    tags: ["ミセス", "J-POP", "最近", "TikTok"],
     tieUp: [],
     genre: "J-POP",
-    searchWords: ["ミセス", "ケセラセラ", "最近", "J-POP"],
+    searchWords: ["ミセス", "みせす", "Mrs", "GREEN APPLE", "ミセスグリーンアップル", "ケセラセラ", "けせらせら", "最近", "流行", "TikTok", "ティックトック", "若者", "大森元貴"],
     singability: 3, popularity: 5, hype: 4, risk: 2,
     vocalRange: "high",
     scenes: ["friends", "lover", "mixed"],
